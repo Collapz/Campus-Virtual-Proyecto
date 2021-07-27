@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicada a la administracion y visualizacion de los estudiantes del Campus Virtual UPAO.">
+    <title>Campus Virtual UPAO | Pagina principal aula virtual</title>
+    <link rel="icon" href="svg/graduation-hat.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light card-header">
+        <div class="container">
+            <a class="navbar-brand me-1" href="#">
+                <img src="svg/graduation-hat.svg" class="" alt="graduation hat" height="26px">
+                <a class="navbar-brand logo align-text-top" href="#">
+                    <h5 class="blue d-inline-block mb-0">UPAO</h5> <i class="gray">|</i> Campus Virtual
+                </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse gap-2" id="navbarScroll">
+                <form class="d-flex my-2 my-lg-0 ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-orange" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <div class="card px-2 py-2 py-lg-0 text-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle py-1 py-lg-2 fw-bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-lg"></i> Mi perfil
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><h6 class="dropdown-header"> Usuario</h6></li>
+                                <li><h6 class="dropdown-item-text mb-0"> Christopeer Guerrero</h6></li>
+                                <li><h6 class="dropdown-header"> ID: 000246344</h6></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-graduation-cap"></i> Aula Virtual</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i> Notificaciones <span class="badge bg-danger">4</span></a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-calendar-alt"></i> Eventos</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-credit-card"></i> Pagos</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Ajustes</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-question"></i> Ayuda</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Desconectar</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Titles -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-10">
+                <h2 class="blue">Aula Virtual <span class="badge bg-primary">Alumno</span></h2>
+            </div>
+            <div class="col-2 text-end">
+                <a href="index.html">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <h4 class="display-4">Ficha de Matriculas</h4>
+        <p class="darkgray">Consulta el contenido de tu ficha de matriculas en esta seccion.</p>
+    </section>
+
+    <!-- Table of Matriculas -->
+    <main class="container my-4 bg-light p-4 rounded-4">
+        <!-- Breadcrumb -->
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Matriculas</li>
+                  <li class="breadcrumb-item active" aria-current="page">000246344</li>
+                </ol>
+            </nav>
+        </div>
+        <hr class="mt-0 mb-4">
+
+        <!-- Title of table -->
+        <section class="text-center">
+            <h4>UNIVERSIDAD PRIVADA ANTENOR ORREGO</h4>
+            <p class="text-uppercase">Ficha de Matricula</p>
+        </section>
+
+        <!-- Information about user -->
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">FACULTAD</th>
+                        <td>: IN INGENIERÍA</td>
+                        <th scope="row">PERIODO</th>
+                        <td>: 202110</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">CARRERA</th>
+                        <td>: ICSI ING. COMPUTACIÓN Y SIST.</td>
+                        <th scope="row">FECHA</th>
+                        <td>: 26/07/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ESTUDIANTE</th>
+                        <td>: 000246344 GUERRERO BELEVAN, CHRISTOPEER ELIOTT</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Table -->
+            <table class="table caption-top">
+                <thead>
+                    <tr>
+                        <th scope="col">VEZ</th>
+                        <th scope="col">CICLO</th>
+                        <th scope="col">TIP</th>
+                        <th scope="col">NRC</th>
+                        <th scope="col">SECC</th>
+                        <th scope="col">CURSO</th>
+                        <th scope="col">NOMBRE CURSO</th>
+                        <th scope="col">CRE</th>
+                        <th scope="col">TPLA</th>
+                        <th scope="col">ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01</td>
+                        <td>R</td>
+                        <td>7759</td>
+                        <td>J04</td>
+                        <td>HUMA - 900</td>
+                        <td>MATEMATICA I</td>
+                        <td>4</td>
+                        <td>T</td>
+                        <td>REGISTRO AUTOMATICO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01</td>
+                        <td>R</td>
+                        <td>7759</td>
+                        <td>J04</td>
+                        <td>HUMA - 900</td>
+                        <td>MATEMATICA I</td>
+                        <td>4</td>
+                        <td>T</td>
+                        <td>REGISTRO AUTOMATICO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01</td>
+                        <td>R</td>
+                        <td>7759</td>
+                        <td>J04</td>
+                        <td>HUMA - 900</td>
+                        <td>MATEMATICA I</td>
+                        <td>4</td>
+                        <td>T</td>
+                        <td>REGISTRO AUTOMATICO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01</td>
+                        <td>R</td>
+                        <td>7759</td>
+                        <td>J04</td>
+                        <td>HUMA - 900</td>
+                        <td>MATEMATICA I</td>
+                        <td>4</td>
+                        <td>T</td>
+                        <td>REGISTRO AUTOMATICO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01</td>
+                        <td>R</td>
+                        <td>7759</td>
+                        <td>J04</td>
+                        <td>HUMA - 900</td>
+                        <td>MATEMATICA I</td>
+                        <td>4</td>
+                        <td>T</td>
+                        <td>REGISTRO AUTOMATICO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01</td>
+                        <td>R</td>
+                        <td>7759</td>
+                        <td>J04</td>
+                        <td>HUMA - 900</td>
+                        <td>MATEMATICA I</td>
+                        <td>4</td>
+                        <td>T</td>
+                        <td>REGISTRO AUTOMATICO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>01</td>
+                        <td>R</td>
+                        <td>7759</td>
+                        <td>J04</td>
+                        <td>HUMA - 900</td>
+                        <td>MATEMATICA I</td>
+                        <td>4</td>
+                        <td>T</td>
+                        <td>REGISTRO AUTOMATICO</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <caption class="">Creditos totales: 21</caption>
+            </div>
+            <div class="col-md-6 text-end">
+                <p class="mb-0 d-inline-block"><small class="text-muted">*Documento no oficial para trámites.</small></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

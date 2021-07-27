@@ -1,0 +1,76 @@
+
+/* UPAO Font Colors */
+.blue {
+    color: #004593;
+}
+
+.gray {
+    color: #94A3B8;
+}
+
+.darkgray {
+    color: #666666;
+}
+
+.lime {
+    color: #22C55E;
+}
+
+.red {
+    color: #DC2626;
+}
+
+.bg-blue {
+    background-color: #004593;
+}
+
+/* Restyle Buttons */
+.btn:focus {
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+/* Resize */
+.resize {
+    height: 300px;
+}
+
+/* New Orange Button Style */
+.btn-outline-orange {
+    color: #fd6300;
+    border-color: #fd6300;
+
+    transition: transform 500ms ease;
+}
+
+.btn-outline-orange:hover {
+    color: #fff;
+    border-color: #fd6300;
+    background-color: #fd6300;
+    /* transition: .3s; */
+    transform: scale(1.05);
+}
+
+/* Add new rounded */
+.rounded-4 {
+    border-radius: 15px;
+}
+
+/* Footer Styles */
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fd6300;
+}
+
+/* Responsive classes */
+@media only screen and (max-width: 990px) {
+    .hidden {
+        display: none;
+    }
+}
