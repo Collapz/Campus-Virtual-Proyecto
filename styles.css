@@ -68,6 +68,11 @@ footer a:hover {
     color: #fd6300;
 }
 
+/* Modified Accordion Buttons */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
 /* Responsive classes */
 @media only screen and (max-width: 990px) {
     .hidden {

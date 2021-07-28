@@ -28,7 +28,17 @@
                     <button class="btn btn-outline-orange" type="submit"><i class="fas fa-search"></i></button>
                 </form>
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <div class="card px-2 py-2 py-lg-0 text-center rounded-pill me-md-2 hidden">
+                        <a class="nav-link px-1 py-lg-2 fw-bold" href="#" id="" role="button" data-bs-toggle="" aria-expanded="false">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                     <div class="card px-2 py-2 py-lg-0 text-center">
+                        <!-- Notifications Alert -->
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle hidden">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                        <!-- Dropdown Menu -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle py-1 py-lg-2 fw-bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-user-circle fa-lg"></i> Mi perfil
