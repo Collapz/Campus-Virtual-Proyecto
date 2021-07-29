@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
 
 /* UPAO Font Colors */
 .blue {
-    color: #004593;
+    color: #0056A3;
 }
 
 .gray {
@@ -21,7 +26,7 @@
 }
 
 .bg-blue {
-    background-color: #004593;
+    background-color: #0056A3;
 }
 
 /* Restyle Buttons */
@@ -68,8 +73,12 @@ footer a:hover {
     color: #fd6300;
 }
 
-/* Modified Accordion Buttons */
+/* Removing the shadows */
 .accordion-button:focus {
+    box-shadow: none;
+}
+
+.form-select:focus {
     box-shadow: none;
 }
 
