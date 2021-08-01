@@ -11,176 +11,239 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-                
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-        <div class="container">
-            <a class="navbar-brand me-1" href="#">
-                <img src="svg/graduation-hat.svg" class="" alt="graduation hat" height="28">
-                <img src="svg/upao-darkblue.svg" alt="Universidad Privada Antenor Orrego (UPAO)" style="height: 24px;" class="mb-1">
-                <span class="blue">Campus</span>
-                <span style="color: #fd6300;">Virtual</span> 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse gap-2" id="navbarScroll">
-                <form class="d-flex my-2 my-lg-0 ms-auto">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-orange" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <div class="card px-2 py-2 py-lg-0 text-center rounded-pill me-md-2 hidden">
-                        <a class="nav-link px-1 py-lg-2 fw-bold" href="#" id="" role="button" data-bs-toggle="" aria-expanded="false">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="card px-2 py-2 py-lg-0 text-center">
-                        <!-- Notifications Alert -->
-                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle hidden">
-                            <span class="visually-hidden">New alerts</span>
-                        </span>
-                        <!-- Dropdown Menu -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle py-1 py-lg-2 fw-bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user-circle fa-lg"></i> Mi perfil
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><h6 class="dropdown-header"> Usuario</h6></li>
-                                <li><h6 class="dropdown-item-text mb-0"> Christopeer Guerrero</h6></li>
-                                <li><h6 class="dropdown-header"> ID: 000246344</h6></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-graduation-cap"></i> Aula Virtual</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i> Notificaciones <span class="badge bg-danger">4</span></a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-calendar-alt"></i> Eventos</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-credit-card"></i> Pagos</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Ajustes</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-question"></i> Ayuda</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Desconectar</a></li>
-                            </ul>
-                        </li>
-                    </div>
+    
+    <div class="d-flex">
+        <!-- Navigation bar -->
+        <div class="d-flex flex-column flex-shrink-0 bg-light float-start sticky-top vh-100 shadow" style="width: 4.5rem;">
+            <!-- <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                <img src="svg/school.svg" alt="" height="40">
+                <span class="visually-hidden">Icon-only</span>
+            </a> -->
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                <li class="nav-item">
+                    <a href="index v2.html" class="nav-link py-4 border-bottom tooltip-box" title="" data-tooltip="Inicio">
+                        <i class="fas fa-home fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="assist.html" class="nav-link py-4 border-bottom tooltip-box" title="" data-tooltip="Asistencias">
+                        <i class="fas fa-user-clock fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="matricula.html" class="nav-link py-4 border-bottom tooltip-box" title="" data-tooltip="Matriculas">
+                        <i class="fas fa-inbox fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link py-4 border-bottom tooltip-box" title="" data-tooltip="Horario">
+                        <i class="fas fa-clock fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="classroom.html" class="nav-link py-4 border-bottom tooltip-box" title="" data-tooltip="Material">
+                        <i class="fas fa-book fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="grades.html" class="nav-link active py-4 border-bottom tooltip-box" title="" data-tooltip="Notas">
+                        <i class="fas fa-folder-open fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="status.html" class="nav-link py-4 border-bottom tooltip-box" title="" data-tooltip="Pagos">
+                        <i class="fas fa-tag fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="dropdown border-top">
+                <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+                    <li><a class="dropdown-item" href="#">Aula Virtual</a></li>
+                    <li><a class="dropdown-item" href="#">Notificaciones <span class="badge bg-danger">4</span></a></li>
+                    <li><a class="dropdown-item" href="#">Eventos</a></li>
+                    <li><a class="dropdown-item" href="#">Pagos</a></li>
+                    <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                    <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Desconectar</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <!-- Section Titles -->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-10">
-                <h2 class="blue">Aula Virtual <span class="badge bg-primary">Alumno</span></h2>
-            </div>
-            <div class="col-2 text-end">
-                <a href="index.html">
-                    <button type="button" class="btn btn-primary">
-                        <i class="fas fa-arrow-left"></i>
+        
+        <!-- Main Content -->
+        <main class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+                <div class="container-fluid mx-3">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                </a>
-            </div>
-        </div>
-        <h4 class="display-4">Reporte de Notas</h4>
-        <p class="darkgray">Consulta el estado de tus notas y revisa las notas de tus componentes.</p>
-    </section>
-
-    <!-- Main -->
-    <main class="container mt-4 bg-light p-4 rounded-4">
-        <!-- Breadcrumb -->
-        <div class="row">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Notas</li>
-                  <li class="breadcrumb-item active" aria-current="page">000246344</li>
-                </ol>
+                    <a class="navbar-brand me-1" href="#">
+                        <!-- <img src="svg/graduation-hat.svg" class="hidden me-1" alt="graduation hat" height="28"> -->
+                        <img src="svg/upao-darkblue.svg" alt="Universidad Privada Antenor Orrego (UPAO)" style="height: 24px;" class="mb-1">
+                        <span class="blue">Campus</span>
+                        <span style="color: #fd6300;">Virtual</span>
+                        <span class="badge bg-primary">Alumno</span> 
+                    </a>
+                    <form class="d-flex position-relative my-2 d-inline-block">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-search position-absolute" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
             </nav>
-        </div>
-        <hr class="mt-0 mb-4">
 
-        <!-- Notas por componente -->
-        <h4 class="h3 mt-4">Notas por Componente</h4>
-        <span id="passwordHelpInline" class="form-text">
-            Las notas por componente se calculan sumando el EP1, EP2, EVP y EVF.
-        </span>
-        <div class="table-responsive mt-3">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">N°</th>
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Curso</th>
-                        <th scope="col">Prom.</th>
-                        <th scope="col">Sust.</th>
-                        <th scope="col">Final</th>
-                        <th scope="col"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>HUMA-1012</td>
-                        <td>ACTIV FORMATIVA I : IVU Y DP</td>
-                        <td>10</td>
-                        <td></td>
-                        <td>10</td>
-                        <td><i class="fas fa-angle-down"></i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>HUMA-1012</td>
-                        <td>ACTIV FORMATIVA I : IVU Y DP</td>
-                        <td>10</td>
-                        <td></td>
-                        <td>10</td>
-                        <td><i class="fas fa-angle-down"></i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>HUMA-1012</td>
-                        <td>ACTIV FORMATIVA I : IVU Y DP</td>
-                        <td>10</td>
-                        <td></td>
-                        <td>10</td>
-                        <td><i class="fas fa-angle-down"></i></td>
-                    </tr>
-                  </tbody>
-            </table>
-        </div>
 
-        <!-- Reporte de notas -->
-        <h4 class="h3 mt-4">Historial Academico</h4>
-        <div class="row">
-            <span id="passwordHelpInline" class="form-text mb-2">
-                Seleccione los siguientes valores para generar su Reportes de Notas Según tu Historial Académico.
-            </span>
-            <div class="col-md-4 py-lg-0 py-2">
-                <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                <select class="form-select" id="specificSizeSelect">
-                    <option selected>Nivel...</option>
-                    <option value="1">Postgrado</option>
-                    <option value="2">Nivelacion - Ingresantes</option>
-                    <option value="3">Preuniversitario</option>
-                    <option value="4">Segunda Especialidad</option>
-                    <option value="5">Estudios Complementarios</option>
-                    <option value="6">Pregrado</option>
-                    <option value="7">Pregrado Semipresencial</option>
-                </select>
+            <!-- Titles -->
+            <section class="container mt-5">
+                <div class="row">
+                    <div class="col-10">
+                        <h2 class="blue">Aula Virtual</h2>
+                    </div>
+                    <div class="col-2 text-end">
+                        <a href="index v2.html">
+                            <button type="button" class="btn btn-primary">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <h4 class="display-4">Reporte de Notas</h4>
+                <p class="darkgray">Consulta el estado de tus notas y revisa las notas de tus componentes.</p>
+            </section>
+        
+            <!-- Menu -->
+            <div class="container mt-4 bg-light p-4 rounded-4">
+                <!-- Breadcrumb -->
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Notas</li>
+                          <li class="breadcrumb-item active" aria-current="page">000246344</li>
+                        </ol>
+                    </nav>
+                </div>
+                <hr class="mt-0 mb-4">
+        
+                <!-- Notas por componente -->
+                <h4 class="h3 mt-4">Notas por Componente</h4>
+                <span id="passwordHelpInline" class="form-text">
+                    Las notas por componente se calculan sumando el EP1, EP2, EVP y EVF.
+                </span>
+                <div class="table-responsive mt-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">N°</th>
+                                <th scope="col">Codigo</th>
+                                <th scope="col">Curso</th>
+                                <th scope="col">Prom.</th>
+                                <th scope="col">Sust.</th>
+                                <th scope="col">Final</th>
+                                <th scope="col"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>HUMA-1012</td>
+                                <td>ACTIV FORMATIVA I : IVU Y DP</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>10</td>
+                                <td><i class="fas fa-angle-down"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>HUMA-1012</td>
+                                <td>ACTIV FORMATIVA I : IVU Y DP</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>10</td>
+                                <td><i class="fas fa-angle-down"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>HUMA-1012</td>
+                                <td>ACTIV FORMATIVA I : IVU Y DP</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>10</td>
+                                <td><i class="fas fa-angle-down"></i></td>
+                            </tr>
+                          </tbody>
+                    </table>
+                </div>
+        
+                <!-- Reporte de notas -->
+                <h4 class="h3 mt-4">Historial Academico</h4>
+                <div class="row">
+                    <span id="passwordHelpInline" class="form-text mb-2">
+                        Seleccione los siguientes valores para generar su Reportes de Notas Según tu Historial Académico.
+                    </span>
+                    <div class="col-md-4 py-lg-0 py-2">
+                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>Nivel...</option>
+                            <option value="1">Postgrado</option>
+                            <option value="2">Nivelacion - Ingresantes</option>
+                            <option value="3">Preuniversitario</option>
+                            <option value="4">Segunda Especialidad</option>
+                            <option value="5">Estudios Complementarios</option>
+                            <option value="6">Pregrado</option>
+                            <option value="7">Pregrado Semipresencial</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 py-lg-0 py-2">
+                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>Programa...</option>
+                            <option value="1">Postgrado</option>
+                            <option value="2">Nivelacion - Ingresantes</option>
+                            <option value="3">Preuniversitario</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 py-lg-0 py-2">
+                        <button type="submit" class="btn btn-primary">Consultar</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 py-lg-0 py-2">
-                <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                <select class="form-select" id="specificSizeSelect">
-                    <option selected>Programa...</option>
-                    <option value="1">Postgrado</option>
-                    <option value="2">Nivelacion - Ingresantes</option>
-                    <option value="3">Preuniversitario</option>
-                </select>
-            </div>
-            <div class="col-md-4 py-lg-0 py-2">
-                <button type="submit" class="btn btn-primary">Consultar</button>
-            </div>
-        </div>
-    </main>
+
+
+            <!-- Footer Section -->
+            <footer class="container-fluid py-5 mt-5" style="background-color: #f8f9fa;">
+                <div class="container py-2 text-dark">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="svg/upao-black.svg" alt="Universidad Privada Antenor Orrego (UPAO)" style="height: 35px;" class="align-baseline">
+                            <h4 class="d-inline-block">Campus Virtual</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end gap-2">
+                                <a href="#">
+                                    <i class="fab fa-twitter fa-2x text-dark"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook fa-2x text-dark"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g fa-2x text-dark"></i>  
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-youtube fa-2x text-dark"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+        </main>
+    </div>
+
+
 
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

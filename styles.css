@@ -82,6 +82,53 @@ footer a:hover {
     box-shadow: none;
 }
 
+/* Add border on focus */
+.form-control:focus {
+    border: 1px solid dodgerblue;
+}
+
+/* bg-danger restyling */
+.bg-danger {
+    background-color: #f02849 !important;
+}
+
+/* Tooltip Styles */
+.tooltip-box {
+	position: relative;
+}
+
+.tooltip-box::before,
+.tooltip-box::after {
+    --scale: 0;
+
+	position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(30%) translateY(50%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: left center;
+}
+
+.tooltip-box::before {
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .5rem;
+    width: max-content;
+    background: #111;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+.tooltip-box:hover::before,
+.tooltip-box:hover::after {
+    --scale: 1;
+}
+
+/* Button Search */
+.btn-search {
+    right: 5px;
+}
+
 /* Responsive classes */
 @media only screen and (max-width: 990px) {
     .hidden {
