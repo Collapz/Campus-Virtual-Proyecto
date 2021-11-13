@@ -55,8 +55,8 @@
     color: #fff;
     border-color: #fd6300;
     background-color: #fd6300;
-    /* transition: .3s; */
-    transform: scale(1.05);
+    transition: .3s;
+    /* transform: scale(1.05); */
 }
 
 /* Add new rounded */
@@ -85,6 +85,16 @@ footer a:hover {
 /* Add border on focus */
 .form-control:focus {
     border: 1px solid dodgerblue;
+}
+
+/* Form Checked */
+.form-check-input:checked {
+    background-color: #fd6300;
+    border-color: #fd6300;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
 }
 
 /* bg-danger restyling */
@@ -127,6 +137,63 @@ footer a:hover {
 /* Button Search */
 .btn-search {
     right: 5px;
+}
+
+/* Settings Navigation Hover Effect */
+#sidebarMenu .nav-link:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+#sidebarMenu .active {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+#sidebarMenu .nav-link:focus {
+    color: #fff;
+    background-color: dodgerblue;
+}
+
+/* Upload Image Styles */
+
+.wrapper {
+    display: flex;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 2px dashed #c2cdda;
+    border-radius: 10rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrapper #custom-btn {
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+}
+
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  */
+.text-orange {
+    color: #fd6300;
 }
 
 /* Responsive classes */

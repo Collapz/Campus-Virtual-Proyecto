@@ -7,4 +7,4 @@ Cosas por hacer:
 3. Proyecto a realizar como practica usando React/Firebase.
 4. Añadir mas paginas que todavia faltan.
 5. Reordenar los archivos HTML, CSS y JS del proyecto.
-6. Actualizar los iconos de la parte de Usuario Nav Bar
+6. Ordenar los colores (CSS) IMPORTANTE!!
